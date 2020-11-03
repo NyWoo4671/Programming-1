@@ -1,4 +1,4 @@
-targets = main.bin test.bin
+targets = main.bin
 CC = gcc
 C_OPTS = -std=gnu11 -g -Wall -Wextra -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wnull-dereference
 
@@ -8,10 +8,11 @@ clean:
 	rm -rf dist
 prep:
 	mkdir dist
-compile: main.bin
+compile: main.bin 
 
 main.bin: src/lab03.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@
+
 run: clean prep compile
 	./dist/main.bin
 doxygen:
