@@ -18,7 +18,7 @@ int main()
 	first_num = value  % 10;
 	second_num = (value % 100) / 10;
 	third_num = value / 100;
-	rev_numb = third_num * 100 + second_num * 10 + first_num;
+	rev_numb = first_num * 100 + second_num * 10 + third_num;
 	
 	//Third task
 	#define A 2
