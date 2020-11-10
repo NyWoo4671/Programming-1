@@ -1,5 +1,5 @@
 int main(){
-	#define x -5f
+	#define x -5.0f
 	float y = 0;
 	if ( x < -1 ){
 		y = -1 / x;
