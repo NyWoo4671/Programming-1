@@ -1,7 +1,7 @@
 int main()
 {
-	char line[] = "Random words    in line";
-	int sum = 1;
+	char line[] = "   Random words    in   line and more";
+	int sum = 0;
 	for (int i = 0; i <= line; i++) {
 		if (line[i] == '\0') {
 			break;
