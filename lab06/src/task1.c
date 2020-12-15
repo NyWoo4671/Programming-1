@@ -8,7 +8,7 @@ int main()
         	sum += 1;
     	}
     	char buff[N];
-    	for (int b = 0; i < N; b++) {
+    	for (int b = 0; b < N; b++) {
         	buff[b] = line[b];
     	}
     	int c = (N - sum - 1) / 2;
