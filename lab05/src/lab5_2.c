@@ -1,5 +1,5 @@
 int main(){
-	int number = 13;
+	int number = 14;
 	char res;
 	if (number > 1) {
 		for (int i = 2; i < number; i++){
