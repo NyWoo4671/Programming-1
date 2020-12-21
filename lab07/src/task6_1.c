@@ -1,4 +1,4 @@
-char feeling(char text[]) {
+void feeling(char text) {
 const int N = 15;
 char napolnenie = '_';
 char line[] = text[];
@@ -23,7 +23,7 @@ int h = sum + c;
 for (int j = h; j < N - 1; j++) {
     line[j] = napolnenie;
 }
-return line[];
+return line;
 }
 
 int main()

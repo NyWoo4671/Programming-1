@@ -1,6 +1,6 @@
-#define SIZE 55
-int prime(int SIZE)
+void prime(int number)
 {
+    int SIZE = 14;
     int Prime_numbers[SIZE];
     int num = number;
     for (int i = 0; i < SIZE; i++) {
@@ -19,10 +19,10 @@ int prime(int SIZE)
             }
         }
     }
-    return 
+    
 }
 int main()
 {
-    natural();
+    prime(14);
     return 0;
 }

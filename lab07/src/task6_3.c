@@ -1,4 +1,4 @@
-char string(int num)
+void string(int num)
 {
     int number = num;
     char result[4][15];
@@ -23,12 +23,11 @@ char string(int num)
             result[3][i] = units[number % 10 - 1][i];
         }
     }
-    return result;
+    return;
 }
 
 int main()
 {
-    char res;
-    res = string(15);
+    string(15);
     return 0;
 }
