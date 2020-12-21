@@ -9,6 +9,6 @@ int array[][] = arr[][];
        return;
 int main()
 {
-	shift{2,4,5};   	       
+	shift({2,4,5});   	       
        return 0;
 }
