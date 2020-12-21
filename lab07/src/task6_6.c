@@ -1,7 +1,7 @@
 #define N 4
 
 #define SIZE 3
-void lol()
+void matrix_mul()
 {
     int array[SIZE][SIZE] = { {1, 2, 3},
                  {4, 5, 6},
@@ -20,6 +20,6 @@ void lol()
 }
 int main()
 {
-    lol();
+    matrix_mul();
     return 0;
 }
