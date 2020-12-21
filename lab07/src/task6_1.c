@@ -1,7 +1,7 @@
-void feeling(char text) {
+void feeling() {
+int line[99];
 const int N = 15;
 char napolnenie = '_';
-char line[] = text[];
 int sum = 0;
 for (int a = 0; line[a] != ' '; a++) {
     sum += 1;

@@ -1,14 +1,18 @@
-void shift(int arr[][]){
-int array[][] = arr[][];
-       int buff = array[0][0];
-       for (int i = 0; i < N * N; i++) {
-               array[0][i] = array[0][i + 1];
-       }
-       array[N - 1][N - 1] = buff;
-       }
-       return;
+#define N 4
+void shift()
+{
+    int array[N][N] = { {1, 2, 3, 4},
+                   {5, 6, 7, 8},
+                   {9, 10, 43, 12},
+                   {13, 14, 15, 22} };
+    int buff = array[0][0];
+    for (int i = 0; i < N * N; i++) {
+        array[0][i] = array[0][i + 1];
+    }
+    array[N - 1][N - 1] = buff;
+}
 int main()
 {
-	shift({2,4,5});   	       
-       return 0;
+    shift();
+    return 0;
 }

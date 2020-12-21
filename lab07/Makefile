@@ -9,15 +9,15 @@ clean:
 prep:
 	mkdir dist
 compile: lab6_1.bin lab6_2.bin lab6_3.bin lab6_4.bin lab6_5.bin lab6_6.bin lab5_1.bin lab5_2.bin lab5_3.bin lab5_4.bin lab5_5.bin
-lab5_1.bin: src/task1.c
+lab5_1.bin: src/lab5_1.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@
-lab5_2.bin: src/task2.c
+lab5_2.bin: src/lab5_2.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@
-lab5_3.bin: src/task3.c
+lab5_3.bin: src/lab5_3.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@
-lab5_4.bin: src/task4.c
+lab5_4.bin: src/lab5_4.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@
-lab5_5.bin: src/task5.c
+lab5_5.bin: src/lab5_5.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@
 lab6_1.bin: src/task6_1.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@
