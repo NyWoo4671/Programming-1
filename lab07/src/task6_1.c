@@ -1,3 +1,19 @@
+/**
+ * @file lab6_1.c
+ * @brief Заповнення строки символами
+ *
+ * @author Vasilyazhenko Dmitriy
+ * @date 21-dec-2020
+ * @version 1.0
+ */
+/**
+ * функція для заповнення
+ *
+ * Послідовність дій:
+ * - Створення змінних
+ * - процес заповнення, за допомогою циклу for
+ * @return успішний код повернення з програми (0)
+ */
 void feeling() {
 int line[99];
 const int N = 15;
@@ -23,9 +39,15 @@ int h = sum + c;
 for (int j = h; j < N - 1; j++) {
     line[j] = napolnenie;
 }
-return line;
+return;
 }
-
+/**
+ * Головна функція.
+ *
+ * Послідовність дій:
+ * - виклик функціїї
+ * @return успішний код повернення з програми (0)
+ */
 int main()
 {
     feeling("Ivanov");
