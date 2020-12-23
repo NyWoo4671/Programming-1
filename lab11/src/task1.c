@@ -4,19 +4,7 @@
 
 void fill_array(int size, int *start_array);
 
-void array_of_repeats(int size, int *start_array, int *array_of_repeats){
-    int count = 0;
-    for (int i = 0; i < SIZE; i++){
-        for (int j = 0; j < SIZE; j++) {
-            if (*(start_array + i) == *(start_array + j)) {
-                count++;
-            }
-        }
-        *(array_of_repeats + i) = count;
-        count = 0;
-    }
-}
-
+void fill_array_of_repeats(int size, int *start_array, int *array_of_repeats);
  
 int size_of_res_array(int size, int *start_array, int *array_of_repeats);
 
@@ -32,7 +20,7 @@ int main()
     int *array_of_repeats = malloc(SIZE * sizeof(int));
     
     fill_array(SIZE, start_array);
-    array_of_repeats(SIZE, start_array, array_of_repeats);
+    fill_array_of_repeats(SIZE, start_array, array_of_repeats);
     
     int res_size = size_of_result(SIZE, start_array, array_of_repeats);
     
@@ -52,6 +40,19 @@ int main()
 void fill_array(int size, int *start_array) {
     for (int i = 0; i < SIZE; i++) {
         *(start_array + i) = rand() % 5 + 1;
+    }
+}
+
+void fill_array_of_repeats(int size, int *start_array, int *array_of_repeats){
+    int count = 0;
+    for (int i = 0; i < SIZE; i++){
+        for (int j = 0; j < SIZE; j++) {
+            if (*(start_array + i) == *(start_array + j)) {
+                count++;
+            }
+        }
+        *(array_of_repeats + i) = count;
+        count = 0;
     }
 }
 
@@ -97,3 +98,4 @@ void fill_result_array(int size, int *start_array, int *array_of_repeats, int *r
         }
     }    
 }
+

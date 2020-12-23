@@ -4,6 +4,7 @@
 
 
 float min_max(int size, float array[], int min_max[]);
+float find_minmax(int size, float array[], int min_max[]);
 void fill_res_arr(float array[], float *res_arr, int pos1, int pos2);
 
 #define SIZE 10
@@ -27,8 +28,8 @@ float find_minmax(int size, float array[], int min_max[])
     int temp = 1;
     int count = 0;
     int temp_1 = 0;
-    int 1_pos = 0;
-    int 2_pos = 0;
+    int first_pos = 0;
+    int second_pos = 0;
     for (int i = 0; i < SIZE; i++) {
         if (array[i] >= array[i - 1]) {
             if (temp == 1) {
@@ -38,14 +39,14 @@ float find_minmax(int size, float array[], int min_max[])
         }else{
             if (temp > count) {
                 count = temp;
-                1_pos = temp_1;
-                2_pos = i - 1;
+                first_pos = temp_1;
+                second_pos = i - 1;
             }
             temp = 1;
         }
     }
-    min_max[0] = 1_pos;
-    min_max[1] = 2_pos; 
+    min_max[0] = first_pos;
+    min_max[1] = second_pos; 
     return count;
 }
 

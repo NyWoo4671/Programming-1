@@ -61,7 +61,7 @@ int main()
     int min_max[2] = {0};
     find_minmax(SIZE, array,min_max);
     int size_of_res = min_max[1] - min_max[0] + 1;
-    int *result_arr = malloc(size_of_res * sizeof(int));
+    int *res_arr = malloc(size_of_res * sizeof(int));
     
     fill_res_arr(array, res_arr, min_max[0], min_max[1]);
     free(res_arr);
@@ -82,29 +82,29 @@ void find_minmax(int size, int *array, int min_max[])
     int temp = 0;
     int sum = 0;
     int temp_1_pos = 0;
-    int 1_pos = 0;
-    int 2_pos = 0;
+    int first_pos = 0;
+    int second_pos = 0;
     for (int i = 0; i < SIZE; i++) {
         if (*(array + i) > 0) {
-            if (temp_ == 0) {
+            if (temp == 0) {
                 temp_1_pos = i;
             }
             temp += *(array + i);
         }else{
             if (temp > sum) {
                 sum = temp;
-                1_pos = temp_1_pos;
-                2_pos = i - 1;
+                first_pos = temp_1_pos;
+                second_pos = i - 1;
             }
             temp = 0;
         }
     }
-    min_max[0] = 1_pos;
-    min_max[1] = 2_pos;
+    min_max[0] = first_pos;
+    min_max[1] = second_pos;
 }
 
 void fill_res_arr (int *array, int *res_arr, int pos1, int pos2){
     for (int i = pos1; i <= pos2; i++ ){
-        *(result_arr + (i - pos1)) = *(array + i);
+        *(res_arr + (i - pos1)) = *(array + i);
     }
 }
