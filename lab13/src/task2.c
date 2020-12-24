@@ -10,7 +10,7 @@
  */
 
 /**
- * @file main2.c
+ * @file task2.c
  * @brief Завдання №2
  *
  * @author Vasilyazhenko Dmitro
