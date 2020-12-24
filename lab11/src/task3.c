@@ -11,7 +11,7 @@ void fill_res_arr(float array[], float *res_arr, int pos1, int pos2);
 
 int main()
 {
-    float array[SIZE] = {1.5, 1.2, 1.3, 1.4, 1.4, 1.5, 1.2, 1.1, 1.3, 1.5};
+    float array[SIZE] = {1.73, 1.24, 1.11, 1.77, 1.77, 1.13, 1.43, 1.11, 1.33, 1.33};
 
     int min_max[2] = {0};
     int size_of_res = find_minmax(SIZE, array, min_max);
