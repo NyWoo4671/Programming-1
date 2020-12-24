@@ -1,6 +1,6 @@
 int main(){
 	double num = 144;
-	double eps = 0.00001;
+	double eps = 0.001;
 	double root = num / 2;
 	while ( root - num / root > eps )
 	{

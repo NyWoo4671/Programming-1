@@ -2,7 +2,7 @@ targets = lab6_1.bin lab6_2.bin lab6_3.bin lab6_4.bin lab6_5.bin lab6_6.bin lab5
 CC = gcc
 C_OPTS = -std=gnu11 -g -Wall -Wextra -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wnull-dereference
 
-all: clean prep compile run
+all: clean prep compile doxygen
 
 clean:
 	rm -rf dist
