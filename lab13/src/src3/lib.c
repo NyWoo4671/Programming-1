@@ -1,8 +1,8 @@
-#include <string.h>
-int main(){
-    char string[] = "gena igraet v doty";
-    int str_length = strlen(string);
+#include "lib.h"
+void caesar_cipher(char *string){
+int str_length = strlen(string);
     char n;
+    char STR[str_length];
     int sdvig = 3;
     for (int i = 0; i < str_length; i++){
     n = string[i];
@@ -24,7 +24,8 @@ int main(){
         }
         n = n + sdvig;
     	}
-    	string[i] = n;
-    }
-    return 0;
+    	STR[i] = n;
+    	}
+	return;
+
 }

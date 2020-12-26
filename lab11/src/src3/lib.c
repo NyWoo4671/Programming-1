@@ -1,28 +1,4 @@
-#include <stdlib.h>
-#include <stdbool.h>
-#include <time.h>
-
-
-float min_max(int size, float array[], int min_max[]);
-float find_minmax(int size, float array[], int min_max[]);
-void fill_res_arr(float array[], float *res_arr, int pos1, int pos2);
-
 #define SIZE 10
-
-int main()
-{
-    float array[SIZE] = {1.73, 1.24, 1.11, 1.77, 1.77, 1.13, 1.43, 1.11, 1.33, 1.33};
-
-    int min_max[2] = {0};
-    int size_of_res = find_minmax(SIZE, array, min_max);
-    float *res_arr = malloc(size_of_res * sizeof(float));
-    
-    fill_res_arr(array, res_arr, min_max[0], min_max[1]);
-    free(res_arr);
-    return 0;
-}
-
-
 float find_minmax(int size, float array[], int min_max[])
 {
     int temp = 1;
@@ -55,7 +31,3 @@ void fill_res_arr (float array[], float *res_arr, int pos1, int pos2){
         *(res_arr + (i - pos1)) = array[i];
     }
 }
-
-
-
-

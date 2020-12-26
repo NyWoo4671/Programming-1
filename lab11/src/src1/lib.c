@@ -1,42 +1,5 @@
- #include <stdlib.h>
-#include <time.h>
-
-
-void fill_array(int size, int *start_array);
-
-void fill_array_of_repeats(int size, int *start_array, int *array_of_repeats);
- 
-int size_of_res_array(int size, int *start_array, int *array_of_repeats);
-
-void fill_result_array(int size, int *start_array, int *array_of_repeats, int *result_array);
-
+#include "lib.h"
 #define SIZE 10
-
-int main()
-{
-    srand(time(NULL));
-    
-    int *start_array = malloc(SIZE * sizeof(int));
-    int *array_of_repeats = malloc(SIZE * sizeof(int));
-    
-    fill_array(SIZE, start_array);
-    fill_array_of_repeats(SIZE, start_array, array_of_repeats);
-    
-    int res_size = size_of_result(SIZE, start_array, array_of_repeats);
-    
-    int *result_array = malloc(res_size * 2 * sizeof(int));
-   
-    fill_result_array(res_size, start_array, array_of_repeats, result_array);
-    
-    free(result_array);
-    free(start_array);
-    free(array_of_repeats);
-    
-    
-    
-    return 0;
-}
-
 void fill_array(int size, int *start_array) {
     for (int i = 0; i < SIZE; i++) {
         *(start_array + i) = rand() % 5 + 1;
@@ -98,4 +61,3 @@ void fill_result_array(int size, int *start_array, int *array_of_repeats, int *r
         }
     }    
 }
-

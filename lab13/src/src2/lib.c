@@ -1,9 +1,6 @@
-#include <string.h>
-float do_operation(int operand_left, int operand_right, char oper);
-#define STR "25/5"
-int main () {
-
-    char * buffer = malloc(strlen(STR) * sizeof(char));
+#include "lib.h"
+void calc(char *STR){
+char * buffer = malloc(strlen(STR) * sizeof(char));
 
     int op_left = strtol(STR, &buffer, 10);
     char op = buffer[0];
@@ -12,9 +9,9 @@ int main () {
     float result = do_operation(op_left, op_right, op);
 
     free(buffer);
+	return;
+	}
 
-    return 0;
-}
 float do_operation(int operand_left, int operand_right, char oper) {
     float result = 0;
     switch (oper) {
