@@ -42,6 +42,7 @@ int gcd(int num1, int num2){
  * - створення змінної result
  * - виклик функціїї
  * @return успішний код повернення з програми (0)
+ * @param result змінна результату
  */
 int main(){
 	int result;

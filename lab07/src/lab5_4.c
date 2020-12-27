@@ -13,6 +13,7 @@
  * - Створення змінних
  * - процес визначення, за допомогою циклу for та умов
  * @return успішний код повернення з програми (res)
+ * @param summ сума дільників
  */
 char Perfecto(int num){
 int number = num;
@@ -32,6 +33,7 @@ int number = num;
  * - створення змінної result
  * - виклик функціїї
  * @return успішний код повернення з програми (0)
+ * @param result змінна результату
  */
 int main(){
 	char result = Perfecto(7);

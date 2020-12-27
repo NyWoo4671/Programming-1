@@ -35,6 +35,7 @@ double num = number;
  * - виклик функціїї для числа сгенерованого rand
  * @param res результат виконання root
  * @return успішний код повернення з програми (0)
+ * @param res змінна результату
  */
 int main(){
 	srand(time(NULL));

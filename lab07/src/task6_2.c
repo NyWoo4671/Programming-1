@@ -13,6 +13,8 @@
  * - Створення змінних
  * - процес визначення, за допомогою циклу for та умов
  * @return успішний код повернення з програми (0)
+ * @param prime_numbers
+ * @param SIZE
  */
 void prime(int number)
 {
