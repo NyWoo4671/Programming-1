@@ -2,7 +2,7 @@ int main()
 {
 	char line[] = "   Random words    in   line and more";
 	int sum = 0;
-	for (int i = 0; i <= line; i++) {
+	for (int i = 0; ; i++) {
 		if (line[i] == '\0') {
 			break;
 		}
