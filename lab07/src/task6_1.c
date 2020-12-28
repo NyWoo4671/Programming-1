@@ -1,5 +1,5 @@
 /**
- * @file lab6_1.c
+ * @file task6_1.c
  * @brief Заповнення строки символами
  *
  * @author Vasilyazhenko Dmitriy

@@ -1,5 +1,5 @@
 /**
- * @file lab6_6.c
+ * @file task6_6.c
  * @brief Множення матриці саму на себе
  *
  * @author Vasilyazhenko Dmitriy

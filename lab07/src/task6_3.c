@@ -1,5 +1,5 @@
 /**
- * @file lab6_3.c
+ * @file task6_3.c
  * @brief Переведення числа у текстовий вигляд
  *
  * @author Vasilyazhenko Dmitriy

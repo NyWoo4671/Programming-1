@@ -1,5 +1,5 @@
 /**
- * @file lab6_5.c
+ * @file task6_5.c
  * @brief Зсув масиву
  *
  * @author Vasilyazhenko Dmitriy

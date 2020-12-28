@@ -1,5 +1,5 @@
 /**
- * @file lab6_2.c
+ * @file task6_2.c
  * @brief Визначення число просте чи складене
  *
  * @author Vasilyazhenko Dmitriy

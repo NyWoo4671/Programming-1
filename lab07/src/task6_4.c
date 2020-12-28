@@ -1,5 +1,5 @@
 /**
- * @file lab6_4.c
+ * @file task6_4.c
  * @brief Визначення кількості слів незважаючи на кількіть пробілів
  *
  * @author Vasilyazhenko Dmitriy

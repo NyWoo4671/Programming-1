@@ -1,10 +1,23 @@
 #include "lib.h"
+/**
+ * функція заповнення масиву
+ *
+ * Послідовність дій:
+ * - процес заповнення випадковими числами, за допомогою циклу for
+ * @return успішний код повернення з програми (0)
+ */
 void fill_array_1(int size, int *start_array) {
     for (int i = 0; i < 10; i++) {
         *(start_array + i) = rand() % 5 + 1;
     }
 }
-
+/**
+ * функція заповнення масиву повторень
+ *
+ * Послідовність дій:
+ * - процес заповнення, за допомогою циклу for
+ * @return успішний код повернення з програми (0)
+ */
 void fill_array_of_repeats(int size, int *start_array, int *array_of_repeats){
     int count = 0;
     for (int i = 0; i < 10; i++){
@@ -17,7 +30,13 @@ void fill_array_of_repeats(int size, int *start_array, int *array_of_repeats){
         count = 0;
     }
 }
-
+/**
+ * функція визначення розміру результуючего масиву
+ *
+ * Послідовність дій:
+ * - процес заповнення випадковими числами, за допомогою циклу for та умов
+ * @return успішний код повернення з програми (0)
+ */
 int size_of_result(int size, int *start_array, int *array_of_repeats){
     int res_size = 0;
     int buff = 0;
@@ -38,7 +57,13 @@ int size_of_result(int size, int *start_array, int *array_of_repeats){
     }
     return res_size;
 }
-
+/**
+ * функція заповнення  результуючего масиву
+ *
+ * Послідовність дій:
+ * - процес заповнення, за допомогою циклу for та умов
+ * @return успішний код повернення з програми (0)
+ */
 void fill_result_array(int size, int *start_array, int *array_of_repeats, int *result_array){
     int k = 0;
     int buff = 0;
@@ -60,7 +85,13 @@ void fill_result_array(int size, int *start_array, int *array_of_repeats, int *r
         }
     }    
 }
-
+/**
+ * функція заповнення масиву
+ *
+ * Послідовність дій:
+ * - процес заповнення випадковими числами, за допомогою циклу for
+ * @return успішний код повернення з програми (0)
+ */
 void fill_array_2(int size, int *array)
 {
     for (size_t i = 0; i < 20; i++)
@@ -68,7 +99,18 @@ void fill_array_2(int size, int *array)
         *(array + i) = rand() % 20 - 10;
     }
 }
-
+/**
+ * функція знаходження першої та останньої позицій послідовності
+ *
+ * Послідовність дій:
+ * - процес заповнення, за допомогою циклу for та умов
+ * @return успішний код повернення з програми (0)
+ * @param temp тимчасовий буфер
+ * @param sum сумма послідовності
+ * @param temp_1_pos тимчасовий буфер першої позиції
+ * @param first_pos перша позиція
+ * @param second_pos друга позиція
+ */
 void find_minmax_1(int size, int *array, int min_max[])
 {
     int temp = 0;
@@ -94,13 +136,30 @@ void find_minmax_1(int size, int *array, int min_max[])
     min_max[0] = first_pos;
     min_max[1] = second_pos;
 }
-
+/**
+ * функція заповнення  результуючего масиву
+ *
+ * Послідовність дій:
+ * - процес заповнення, за допомогою циклу for
+ * @return успішний код повернення з програми (0)
+ */
 void fill_res_arr (int *array, int *res_arr, int pos1, int pos2){
     for (int i = pos1; i <= pos2; i++ ){
         *(res_arr + (i - pos1)) = *(array + i);
     }
 }
-
+/**
+ * функція знаходження першої та останньої позицій послідовності
+ *
+ * Послідовність дій:
+ * - процес заповнення, за допомогою циклу for та умов
+ * @return успішний код повернення з програми (0)
+ * @param temp тимчасовий буфер
+ * @param count кількість чисел у послідовності
+ * @param temp_1 тимчасовий буфер першої позиції
+ * @param first_pos перша позиція
+ * @param second_pos друга позиція
+ */
 float find_minmax_2(int size, float array[], int min_max[])
 {
     int temp = 1;
@@ -123,11 +182,18 @@ float find_minmax_2(int size, float array[], int min_max[])
             temp = 1;
         }
     }
+    count = second_pos - first_pos + 1;
     min_max[0] = first_pos;
     min_max[1] = second_pos; 
     return count;
 }
-
+/**
+ * функція заповнення масиву
+ *
+ * Послідовність дій:
+ * - процес заповнення випадковими числами, за допомогою циклу for
+ * @return успішний код повернення з програми (0)
+ */
 void fill_array_3(int size, int **array){
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
@@ -135,13 +201,25 @@ void fill_array_3(int size, int **array){
         }
     }
 }
-
+/**
+ * функція заповнення  результуючего масиву
+ *
+ * Послідовність дій:
+ * - процес заповнення, за допомогою циклу for та умов
+ * @return успішний код повернення з програми (0)
+ */
 void fill_res_array(int size, int **array, int *res_array){
     for(int i = 0; i < 5; i++){
         *(res_array + i) = *(*(array + i) + i);
     }
 }
-
+/**
+ * функція сортування масиву
+ *
+ * Послідовність дій:
+ * - процес заповнення, за допомогою циклу for та умов
+ * @return успішний код повернення з програми (0)
+ */
 void sort_array(int size, int *res_array){
     int temp = 0;
     for (int i = 0; i < 5; i++){
