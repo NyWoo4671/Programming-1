@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/osboxes/Programming-1/lab12/src/main2/lib.c
+lib.h
+/home/osboxes/Programming-1/lab12/src/main2/lib.h
+
+/home/osboxes/Programming-1/lab12/src/main2/lib.h
+stdlib.h
+-
+time.h
+-
+stdio.h
+-
+string.h
+-
+
